@@ -1,0 +1,107 @@
+/* ABOUT欄の余白をコンパクトに調整 */
+.about {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+.about .label {
+  margin-bottom: 8px;
+}
+
+.about .copy {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.news {
+  background: #fffef1;
+  border-top: 1px solid var(--line);
+}
+
+.news h2 {
+  font-size: 50px;
+}
+
+.news-list {
+  max-width: 720px;
+  margin-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.news-list article {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-list time {
+  color: var(--bluegray);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.news-list p {
+  margin: 0;
+}
+
+/* 上部のクリーム色の背景エリアだけを元の大きさへ戻す */
+.hero {
+  min-height: 550px;
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
+
+.contact .sns-title {
+  margin: 0 0 12px;
+  font-size: 17px;
+}
+
+.contact .contact-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  gap: 64px;
+}
+
+.contact .contact-links {
+  margin-top: 0;
+  flex-wrap: nowrap;
+}
+
+.contact .mail-link {
+  margin-top: 0;
+}
+
+.contact .mail-link a {
+  display: inline-block;
+  background: #fff;
+  color: var(--ink);
+  padding: 10px 14px;
+  text-decoration: none;
+  border: 1px solid #d1dce1;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact .mail-link span {
+  margin-left: 12px;
+}
+
+@media (max-width: 650px) {
+  .news h2 {
+    font-size: 40px;
+  }
+
+  .news-list article {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+
+  .contact .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
